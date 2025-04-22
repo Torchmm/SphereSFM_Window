@@ -1,4 +1,5 @@
 1. 各个库的版本：
+Visual studio 2019
 ceres 2.2.0
 Eigen 3.3.9
 lz4   1.7.4
@@ -10,4 +11,5 @@ lapack 3.6.0
 suitesparse 5.4.0
 gflags 2.2.0
 
-采用各个库的动态版本除了 glew
+采用各个库的动态版本除了 glew ,
+glew用动态库应该也可以，需要把cmakelists中add_definitions("-DGLEW_STATIC")删除。
